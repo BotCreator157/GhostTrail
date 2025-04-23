@@ -18,6 +18,7 @@ const languages = {
       your_addresses_count:  "You have {{count}} deposit address(es):",
       select_address_delete: "Select one to delete:",
       address_deleted:       "✅ Address deleted.",
+      operation_cancelled: "Operation cancelled."
     },
     zh: {
       welcome: "欢迎来到 GhostTrail 👻",
@@ -37,6 +38,7 @@ const languages = {
       your_addresses_count:  "您有 {{count}} 个存款地址：",
       select_address_delete: "请选择一个要删除：",
       address_deleted:       "✅ 地址已删除。",
+      operation_cancelled: "操作已取消。"
     },
     vi: {
       welcome: "Chào mừng đến với GhostTrail 👻",
