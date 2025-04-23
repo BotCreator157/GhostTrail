@@ -1,6 +1,9 @@
 // src/bot/index.js
 require('dotenv').config()
 
+// detect whether this module was run directly, or only required
+const isMain = require.main === module;
+
 const { Telegraf, Markup } = require('telegraf')
 const { session }          = require('./middlewares/session')
 const express              = require('express')
@@ -350,14 +353,23 @@ bot.action('confirm_no', async (ctx) => {
   await ctx.reply(t(ctx.session.language, 'transfer_cancelled'), mainMenuKeyboard)
 })
 
-// ─── LAUNCH / WEBHOOK ─────────────────────────────────────────────
-if (process.env.NODE_ENV === 'production') {
-  bot.telegram.setWebhook(`${process.env.APP_URL}/telegraf/webhook`)
-} else {
-  bot.launch()
-  console.log('🤖 GhostTrail Bot is running locally!')
+// ─── LAUNCH / WEBHOOK (only if run directly) ────────────────────
+if (isMain) {
+  // If in production, set up webhook & serve via Express
+  if (process.env.NODE_ENV === 'production') {
+    const APP_URL = (process.env.APP_URL||'').replace(/\/+$/,'')
+    bot.telegram.setWebhook(`${APP_URL}/telegraf/webhook`)
+
+    const app = express()
+    app.use(bot.webhookCallback('/telegraf/webhook'))
+    const PORT = process.env.PORT || 3000
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
+  } else {
+    // local/dev polling
+    bot.launch()
+    console.log('🤖 GhostTrail Bot is running locally (polling)!')
+  }
 }
 
-const app = express()
-app.use(bot.webhookCallback('/telegraf/webhook'))
-app.listen(process.env.PORT || 3000, () => console.log('Server running on port 3000'))
+// Export the configured bot so other scripts can require() it
+module.exports = bot
