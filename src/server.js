@@ -22,6 +22,9 @@ const exploreRoutes    = require('./controllers/exploreController')
 
 const app = express()
 
+// trust the first proxy (Heroku), so rate-limit will read X-Forwarded-For safely
+app.set('trust proxy', 1)
+
 // 1) hide fingerprint
 app.disable('x-powered-by')
 
