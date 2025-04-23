@@ -1,10 +1,12 @@
 // src/bot/utils/apiClient.js
-const axios = require('axios')
-require('dotenv').config()
+const axios = require('axios');
+
+const base = process.env.BACKEND_API_URL
+  || `${(process.env.APP_URL||'').replace(/\/+$/,'')}/api`;
 
 const apiClient = axios.create({
-  baseURL: process.env.BACKEND_API_URL,
-  timeout: 10000, // 10 seconds timeout
-})
+  baseURL:  base,
+  timeout: 10000,
+});
 
-module.exports = { apiClient }
+module.exports = { apiClient };
