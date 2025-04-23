@@ -1,2 +1,2 @@
 web:    node src/server.js
-worker: node src/bot/index.js
+worker: node bot-polling.js
