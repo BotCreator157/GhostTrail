@@ -15,6 +15,16 @@ Currently, the backend powers a Telegram bot as an MVP to showcase its full capa
 
 ## 👻 Why It Exists
 
+## 👤 About the Creator
+
+I’m a self-taught developer on a journey to build tools that protect privacy in a world that often forgets its value.
+
+While I’m still learning backend and frontend development, I’m passionate about creating something meaningful — a platform where users can control their crypto anonymously, without KYC, trackers, or surveillance.
+
+I chose Telegram as the launchpad despite its reputation for scams because it has immense reach and flexible bot features. I want to prove that it’s possible to build **trustworthy**, **privacy-first** solutions here.
+
+GhostTrail is my proof of concept and an invitation to everyone who values financial privacy: let’s build a better, safer crypto ecosystem — together.
+
 > I built this for **privacy** — for the anonymous space we’ve all lost.  
 >
 > In a world where transactions are constantly traced, sold, or watched, GhostTrail is a stand against surveillance.  
