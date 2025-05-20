@@ -81,6 +81,22 @@ If you appreciate GhostTrail and want to support the project’s development, yo
 
 Thank you for helping keep privacy alive! 🙏
 
+GhostTrail isn’t just a bot — it’s a movement.
+
+I’m not only looking for donations or $50,000. I’m looking for people:
+
+Freelancers, students, or self-taught devs
+
+People learning backend, frontend, or bots
+
+Video creators and editors
+
+Privacy advocates who believe in freedom from surveillance
+
+If you’ve ever felt like an outsider — bullied, unseen, or just quiet — but you want to build something that matters, GhostTrail is for you.
+
+Let’s create this together — not for fame, but for impact.
+
 ---
 
 ## 📂 Resources
