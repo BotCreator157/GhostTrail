@@ -1,84 +1,92 @@
-✅ GhostTrail – Anonymous Crypto Payment Facilitator
-A Node.js backend system enabling private, anonymous BTC, ETH, and USDT transactions — no KYC, no third-party APIs.
+# ✅ GhostTrail – Anonymous Crypto Payment Facilitator
 
-🌐 What Is GhostTrail?
-GhostTrail is a backend crypto payment facilitator that supports Bitcoin (Signet), Ethereum (Sepolia), and USDT on TRON (Shasta) transactions — all on testnets for now.
-There’s no KYC, no central API dependency, and it’s designed to be deployable by anyone. Currently, the backend is connected to a Telegram bot serving as an MVP to showcase its full capabilities.
+*A Node.js backend system enabling private, anonymous BTC, ETH, and USDT transactions — no KYC, no third-party APIs.*
 
-👻 Why It Exists
-I built this for privacy — to reclaim the anonymous space we’ve all lost.
-In a world where transactions are constantly traced, sold, or watched, GhostTrail is a stand against surveillance.
+---
 
-This project is for the builders, the misfits, and the people who just want to transact freely without fear or exposure.
+## 🌐 What Is GhostTrail?
 
-GhostTrail doesn’t want your data — it only wants to empower you to control your crypto without revealing your identity.
+GhostTrail is a backend crypto payment facilitator that supports **Bitcoin**, **Ethereum**, and **TRON-based USDT** transactions.  
+There’s **no KYC**, no central API dependency, and it’s designed to be deployable by anyone.  
 
-🔧 Current Features (Testnet MVP)
-🔐 Privacy-first architecture:
+Currently, the backend powers a Telegram bot as an MVP to showcase its full capabilities.
 
-Hashed Telegram IDs — no personal data stored
+---
 
-Wallet data encrypted and controlled only by users
+## 👻 Why It Exists
 
-Logs auto-deleted every 24 hours (TTL)
+> I built this for **privacy** — for the anonymous space we’ve all lost.  
+>
+> In a world where transactions are constantly traced, sold, or watched, GhostTrail is a stand against surveillance.  
+>
+> This is for the builders, the misfits, and the people who just want to **transact freely** without fear or exposure.
 
-⚙️ Testnet support for:
+---
 
-Bitcoin (Signet)
+## 🔧 Current Features (Testnet MVP)
 
-Ethereum (Sepolia)
+- 🔐 **User privacy architecture**:
+  - Unique hash ID generation for every user
+  - Encrypted wallet storage with user-only access
+  - Full wallet control by users only
+- ⚙️ **Wallets for testnets**:
+  - **Ethereum (Sepolia)**
+  - **Bitcoin (Signet)**
+  - **USDT on TRON (Shasta)**
+- 💸 Balance checks, delayed payments, and withdrawal handling
+- 🗑️ Wallet deletion and re-creation anytime
+- 🧪 Entire system runs on **Node.js** backend
+- 💬 Connected to a working **Telegram bot** as MVP
+- ❌ No KYC, no analytics, no metadata logging
+- ⏳ Logs and data have TTL (time-to-live) and auto-delete after 24 hours
+- 🌐 Multilanguage support: English, Chinese, Vietnamese, Thai, Japanese, Korean
 
-TRON-based USDT (Shasta)
+---
 
-💸 Balance checks, delayed payments, and withdrawal handling to cold wallets
+## 🛠 Upcoming Features & Roadmap
 
-🗑️ Wallet deletion and recreation at any time
+- Develop multisig Bitcoin wallets for enhanced security
+- Implement USDT escrow services for safe trading
+- Add functionality for split transfers into multiple wallets before final consolidation
+- Deploy full BTC, ETH, and TRON nodes to avoid third-party API dependencies
+- Enhance privacy with advanced transfer delay and gas fee obfuscation techniques
 
-🧪 Fully coded in Node.js with a Telegram bot interface using inline buttons
+---
 
-🌍 Multi-language support: English, 中文, ไทย, Việt, 日本語, 한국어
+## 🚀 How to Use
 
-⚙️ Adjusted gas fees and transfer delays for improved transaction anonymity
+1. Clone the repository  
+2. Set up your `.env` file with your Telegram bot token and required keys  
+3. Run the Node.js backend locally or deploy on your server  
+4. Connect your Telegram bot to start interacting  
+5. Customize and scale the bot logic as you see fit
 
-🚀 Try It Now
-Experience GhostTrail live on Telegram:
-@GhostTrail_bot
+---
 
-Join the discussion and community here:
-GhostTrail Telegram Group
+## ☕ Support
 
-💡 Why $50,000?
-GhostTrail is a working testnet prototype. With your support, the goal is to build a real privacy powerhouse for crypto transactions:
+If you appreciate GhostTrail and want to support the project’s development, you can send donations to this Tron wallet address:
 
-🧩 Deploy full BTC multisig wallets and realnet infrastructure
+`TFSbwvp2ro2hXuoY4GkNs7QDrqR9XY6WZM`
 
-🛠️ Build private backend nodes with no cloud dependencies
+Thank you for helping keep privacy alive! 🙏
 
-🔐 Upgrade wallet architecture and escrow services for added security
+---
 
-⚡ Add multi-hop split transfers and expiring addresses for better anonymity
+## 📂 Resources
 
-🤝 Bring in more developers passionate about privacy to grow the project
+- Telegram Bot: [@GhostTrail_bot](https://t.me/GhostTrail_bot)  
+- Telegram Community: [t.me/Gh0stTrail](https://t.me/Gh0stTrail)  
+- GitHub Repo: [https://github.com/BotCreator157/GhostTrail](https://github.com/BotCreator157/GhostTrail)
 
-If you believe privacy is a right — help build it here.
+---
 
-☕ Support
-This project is driven by passion, not profit.
-If you like what you see, support the movement by buying me a coffee or sharing GhostTrail with privacy-conscious friends.
+## ⚠️ Disclaimer
 
-📎 Usage
-Clone this repo
+This project is a privacy-focused testnet MVP and does not handle real funds currently. Use at your own risk. Always test thoroughly and audit before deploying for real-world use.
 
-Create a .env file with your Telegram bot token and RPC keys
+---
 
-Run with Node.js locally or on your own server
+Feel free to fork, contribute, and help grow the privacy ecosystem!
 
-Connect your Telegram bot and start transacting anonymously
-
-Fork, remix, and build on top — this is open-source freedom
-
-🖤 Final Words
-GhostTrail was built for those who want to stay unseen, unheard, and untracked — yet still move freely in crypto.
-If you’re one of them, this is your tool.
-
-
+---
